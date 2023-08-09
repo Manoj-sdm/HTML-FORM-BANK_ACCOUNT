@@ -1,3 +1,36 @@
 body{
-    margin: 0%;
+    background-color: rgb(92, 170, 201);
+}
+.name,.gender{
+    display: inline-block;
+    padding: 10px;
+}
+form{
+    font-weight: 300px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px 50px 10px 50px;
+    border: 2px solid rgb(29, 20, 34);
+    padding: 30px;  
+    height: fit-content;  
+    background-color: beige;
+    align-content: center;  
+}
+div{
+    padding: 20px;
+}
+.name{
+    padding: 20px;
+}
+input{
+    border-radius: 10px 3px 10px 3px;
+    padding: 10px;
+    
+}
+.form-container{
+    position: 30px 30px; 
+
+}
+label{
+    padding-right: 30x;
 }

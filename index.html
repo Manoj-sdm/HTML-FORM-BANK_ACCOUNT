@@ -1,9 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML-FORM-BANK-ACCOUNT</title>
+    <head>Opening-Bank-Account</title>
+        <link rel="stylesheet" href="assets/style/style.css">
     </head>
     <body>
-        <p>This is initial-commit</p>
+        <h1 align="center">Form For Opening Bank Account</h1>
+        <br>
+        <div class="form-container">
+        <form >
+            <div class="name">
+            <label for="first-name">Name</label><br>
+            <input type="text" id="firt-name" name="first-name" placeholder="first-name"required><br></div>
+            <div class="name">
+            <!-- <label for="middle-name">mid-name</label> -->
+            <input type="text" id="middle-name" name="middle-name" placeholder="middle-name"><br></div>
+            <div class="name">
+            <!-- <label for="user-name">last-name</label> -->
+            <input type="text" id="last-name" name="last-name" placeholder="last-name"required><br>
+            </div>
+            <div class="phone-number">
+            <label for="phone-number">Mobile-number</label>
+            <input type="text" pattern="[6-9]{1}[1-9]{9}" maxlength="10" id="number" name="phone-number"><br>
+            </div>
+            <div class="adhar">
+                <label for="aadhar">Aadhar Number</label>
+                <input type="text" id="aadhar" name="aadhar-number" pattern="[0-9]"  maxLength="16" required>
+            </div>
+            <div class="mail">
+            <label for="mail-id">Mail id</label>
+            <input type="email" id="mail-id" name="mail"  pattern=".+@globex\.com" size="30" placeholder="enter email here ...">
+            <br></div>
+            <div class="dob">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="date-of-birth" required><br>
+            </div>
+            <div class="`gender" >
+                <label for="gender">Gender</label>                
+                <input type="radio" id="gender-male" name="gender">
+                <label for ="male">male</label>
+
+                    <input type="radio" id="gender-female" name="gender" >
+                    <label for ="female">Female</label>
+            </div>
+            <div class="father-name">
+                <label for="father">Father Name</label>
+                <input type="text" id="father" name="father-name" required>
+            </div>
+            <div class="mother-name">
+                <label for="mother">Mother Name</label>
+                <input type="text" id="mother" name="mother-name" required>
+            </div>
+            <div class="account-type">
+                <span id="account-type">Account-type</span><br>
+                <input type="radio" id="acc-saving" name="account-type" > Savings
+                <input type="radio" id="acc-current" name="account-type"> Current
+                <input type="radio" id="acc-fixed" name="account-type"> Fixed Deposit
+                <input type="radio" id="acc-recurring" name="account-type"> Recurring Deposit
+
+            </div>
+            <div class="nationality">
+                Nationality :  
+                <input type="radio" name="nationality"> Indian 
+                <input type="radio" name="nationality"> Others..
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="true" >
+                <span id="true">Above given informations are given by me and are true</span><br>
+                <input type="checkbox" id="terms" >
+                <span id="terms">I Agree the terms and conditions of the Bank</span>
+            </div>
+            <div class="submit">
+                <input type="submit" >
+                <input type="button" value="reset">
+            </div>           
+        </form>
+        </div>
     </body>
 </html>
